@@ -1,0 +1,17 @@
+https://www.w3schools.com/
+https://developer.mozilla.org/pt-BR/docs/Web
+https://css-tricks.com/
+https://www.w3c.br/
+https://www.w3c.br/Cursos/CursoHTML5
+https://web.dev/learn/design/picture-element/
+https://www.cgi.br/
+https://www.nic.br/noticia/releases/publicacao-do-w3c-brasil-explica-a-pessoas-com-deficiencia-como-navegar-na-web/
+
+
+Ferramentas
+https://www.thinkwithgoogle.com/intl/pt-br/estrategias-de-marketing/apps-e-mobile/dispositivos-moveis-ferramentas-otimizar-site-app/
+https://pagespeed.web.dev/
+https://meyerweb.com/eric/tools/css/reset/
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-br
+https://color.adobe.com/pt/create/color-wheel
+https://validator.w3.org/#validate_by_uri
