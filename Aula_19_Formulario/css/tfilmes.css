@@ -1,0 +1,75 @@
+/*
+ margin: 0 auto - para centralizar objetos.
+ * border-color: coral - define cor da borda.
+ table-layout: fixed - define que a borda será fixa.
+ width: 700px - define largura da tabela.
+ * border-spacing: 15px - define distancia entre as bordas das celulas adjacentes.
+ * border-width: 5px - define a largura da borda.
+ * border-style: double - define o estilo de borda.
+ dotted solid \double/ - pontilhado duplo.
+ dotted solid \dashed/ - pontilhado duplo tracejado.
+ dotted - pontilhado
+
+*/
+table {
+    margin: 0 auto;
+    border-color: coral;
+    table-layout: fixed;
+    width: 700px;
+    border-spacing: 15px;
+    border-width: 5px;
+    border-style: double;
+}
+
+#idcor {
+    color: green;
+
+}
+
+/*
+border-bottom: 1px solid #ddd - define uma borda em toda td.
+background-color: #4caf50 - cor do fundo.
+
+*/
+
+td {
+    text-align: center;
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+    background-color: #4caf50;
+    color: white;
+}
+
+/*
+* border -radius - define arredonda das bordas
+* display: block - define para se ajustar no objeto
+* margin-left: auto - ajuste automatico para a esquerda
+* margin-right: auto - ajuste automatico para direita.
+*/
+#imgfilmes {
+    border-radius: 8px;
+    width: 138px;
+    height: 190px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imgfilmes:hover {
+    border-radius: 8px;
+    width: 148px;
+    height: 200px;
+}
+
+td:hover {
+    background-color: blue;
+    font-size: 20px;
+}
+/*
+td:nth-child(even) - seletor e aplica os efeitos nas linhas
+even - nas linhas pares
+odd - nas linhas ímpares
+*/
+td:nth-child(even) {
+    background-color: red;
+}

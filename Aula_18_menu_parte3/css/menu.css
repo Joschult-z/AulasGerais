@@ -1,117 +1,108 @@
-/*list-style:none - para retirar o 
-ponto do marcador  */
-#menu, #menu ul{
-	padding: 0;
-	list-style:none;
+/*List style para returar ponto do marcador */
+#menu,
+#menu ul {
+    padding: 0;
+    list-style: none;
 }
+
 /*
-width: 69% - defini tamanho da caixa do 
-menu na largura
-margin: 30px auto - define margem do 
-menu para o resto do site
-border: 1px solid #000033 - define 
-borda de fundo
-background-image: linear-gradient - 
-define um fundo no menu utilizando 
-gradiente com duas cores
-border-radius - define borda arredondada
-do menu
-box-shadow: 0 1px 1px #777 - define sombra 
-no menu
-0 - direita
-primeiro 1px - para baixo
-segundo 1px - sombra
-*/
-#menu{
-	width: 100%;
-	margin: 30px auto;
-	border: 1px solid #000033;
-	background-image: linear-gradient(#444, #222);
-	border-radius: 6px;
-	box-shadow: 0 1px 1px #777;
-}
-/*
-content:" " - propriedade content 
-para especificar o conteúdo a ser 
-inserido
-display: table - cria uma tabela do 
-layout
-clear: both - especifica um elemento 
-flutuante
-menu:before - seletor que insere antes
-do conteúdo
-#menu:after - seletor que insere 
-depois do conteúdo
-*/
-#menu:before, #menu:after{
-	content:" ";
-	display: table;
-	clear: both;
-}
-/*
-position: relative - define posição 
-do submenu
-*/
-#menu li{
-	float: left;
-	position: relative;
-}
-/*
-text-transform: uppercase - 
-controla texto em maiusculo e 
-minusculo
-uppercase - maiusculo
-lowercase - minusculo
-capitalize - coloca maiusculo na 
-primeira letra
+width: 69%; -- define tamanho da caixa do menu - largura -
+
+margin: 30px auto; -- define margem do menu para o resto do site
+
+border: 1px solid #000033; -- define borda de fundo
+
+background-image: linear-gradient(#444, #222); -- define fundo no menu utilizando gradiente com duas cores
+
+border-radius: 6px; -- define borda arredondada
+
+box-shadow: 0 1px 1px #777; -- define sombra no menu
+0 - direita;
+primeiro 1px -- para baixo;
+segundo 1px -- sombra #XXX - define a cor...obviamente que terão numeros no lugar do " XXX "
 
 */
-#menu a{
-	float: left;
-	padding: 12px 30px;
-	color: #999;
-	text-transform: uppercase;
-	text-decoration:none;
+#menu {
+    width: 68%;
+    margin: 30px auto;
+    border: 1px solid #000033;
+    background-image: linear-gradient(#444, #222);
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
 }
-#menu li:hover a{
-	color: #fafafa;
-}
-/*
-visibility: hidden - define se o 
-submenu aparece
-position: absolute - define uma 
-posição fixa
-top: 38px - define a distancia do 
-submenu
 
-*/
-#menu ul{
-	visibility: hidden;
-	position: absolute;
-	top: 38px;
-	background-image:linear-gradient(#444, #111);
-	border-radius: 4px;
-}
 /*
-visibility:visible - para deixar o 
-submenu visivel
+content:"" - para especificar o conteudo a ser inserido;
+display: table - cria uma tabela do layout;
+clear: both - especifica um elemento flutuante;
+menu: before - seletor que insere antes do conteudo;
+menu::after - seletor que insere depois do conteudo.
 */
-#menu li:hover ul{
-	visibility:visible;
+#menu::before,
+#menu::after {
+    content: " ";
+    display: table;
+    clear: both;
 }
+
 /*
-display: block - faz com que o 
-elemento HTML seja renderizado 
-como bloco
-text-transform:none - deixa a fonte 
-do texto exatamente como foi inserida
+position: relative - define posição do submenu.
 */
-#menu ul a{
-	padding: 10px;
-	width: 130px;
-	display: block;
-	text-transform:none;
+#menu li {
+    float: left;
+    position: relative;
 }
-#menu ul a:hover{
-	background-image:linear-gradient(#04acec, #0186ba);
+
+/*
+    text-transform: uppercase - controla texto em maisculo e minusculo.
+    uppercase - maiusculo.
+    lowercase - minusculo.
+    capitalize - coloca maiusculo na primeira letra.
+*/
+#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #999;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#menu li:hover a {
+    color: #fafafa;
+}
+
+/*
+    visibility: hidden - define se o submenu aparece.
+    position: absolute - define uma posição fixa.
+    top: 38px - define a distancia do submenu.
+*/
+#menu ul {
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 4x;
+}
+
+/*
+visibility: visible - para deixar o submenu visivel.
+*/
+#menu li:hover ul {
+    visibility: visible;
+}
+
+/*
+display: block - faz com que o elemento HTML seja renderizado como bloco.
+text-transform: none - deixa a fonte do texto exatamente como foi inserida.
+*/
+#menu ul a {
+    padding: 10px;
+    width: 130px;
+    display: block;
+    text-transform: none;
+}
+
+#menu ul a:hover {
+    background-image: linear-gradient(#04ACEC, #0186BA);
+
 }
